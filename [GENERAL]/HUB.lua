@@ -49,26 +49,26 @@ end
 
 
 local themes = {
-    SchemeColor = Color3.fromRGB(74, 99, 135),
-    Background = Color3.fromRGB(36, 37, 43),
-    Header = Color3.fromRGB(28, 29, 34),
+    SchemeColor = Color3.fromRGB(227, 27, 27),
+    Background = Color3.fromRGB(10, 10, 10),
+    Header = Color3.fromRGB(5, 5, 5),
     TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(32, 32, 38)
+    ElementColor = Color3.fromRGB(20, 20, 20)
 }
 local themeStyles = {
     DarkTheme = {
-        SchemeColor = Color3.fromRGB(64, 64, 64),
-        Background = Color3.fromRGB(0, 0, 0),
-        Header = Color3.fromRGB(0, 0, 0),
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
     LightTheme = {
-        SchemeColor = Color3.fromRGB(150, 150, 150),
-        Background = Color3.fromRGB(255,255,255),
-        Header = Color3.fromRGB(200, 200, 200),
-        TextColor = Color3.fromRGB(0,0,0),
-        ElementColor = Color3.fromRGB(224, 224, 224)
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     BloodTheme = {
         SchemeColor = Color3.fromRGB(227, 27, 27),
@@ -78,46 +78,46 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
     GrapeTheme = {
-        SchemeColor = Color3.fromRGB(166, 71, 214),
-        Background = Color3.fromRGB(64, 50, 71),
-        Header = Color3.fromRGB(36, 28, 41),
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(74, 58, 84)
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     Ocean = {
-        SchemeColor = Color3.fromRGB(86, 76, 251),
-        Background = Color3.fromRGB(26, 32, 58),
-        Header = Color3.fromRGB(38, 45, 71),
-        TextColor = Color3.fromRGB(200, 200, 200),
-        ElementColor = Color3.fromRGB(38, 45, 71)
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     Midnight = {
-        SchemeColor = Color3.fromRGB(26, 189, 158),
-        Background = Color3.fromRGB(44, 62, 82),
-        Header = Color3.fromRGB(57, 81, 105),
-        TextColor = Color3.fromRGB(255, 255, 255),
-        ElementColor = Color3.fromRGB(52, 74, 95)
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     Sentinel = {
-        SchemeColor = Color3.fromRGB(230, 35, 69),
-        Background = Color3.fromRGB(32, 32, 32),
-        Header = Color3.fromRGB(24, 24, 24),
-        TextColor = Color3.fromRGB(119, 209, 138),
-        ElementColor = Color3.fromRGB(24, 24, 24)
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     Synapse = {
-        SchemeColor = Color3.fromRGB(46, 48, 43),
-        Background = Color3.fromRGB(13, 15, 12),
-        Header = Color3.fromRGB(36, 38, 35),
-        TextColor = Color3.fromRGB(152, 99, 53),
-        ElementColor = Color3.fromRGB(24, 24, 24)
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
     },
     Serpent = {
-        SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(31, 41, 43),
-        Header = Color3.fromRGB(22, 29, 31),
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(22, 29, 31)
+        ElementColor = Color3.fromRGB(20, 20, 20)
     }
 }
 local oldTheme = ""
@@ -393,7 +393,7 @@ function Kavo.CreateLib(kavName, themeList)
         page.Size = UDim2.new(1, 0, 1, 0)
         page.ScrollBarThickness = 5
         page.Visible = false
-        page.ScrollBarImageColor3 = Color3.fromRGB(227, 27, 27)
+        page.ScrollBarImageColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 16, themeList.SchemeColor.g * 255 - 15, themeList.SchemeColor.b * 255 - 28)
 
         pageListing.Name = "pageListing"
         pageListing.Parent = page
@@ -531,20 +531,20 @@ function Kavo.CreateLib(kavName, themeList)
             sectionName.Font = Enum.Font.Gotham
             sectionName.Text = secName
             sectionName.RichText = true
-            sectionName.TextColor3 =  Color3.fromRGB(87, 143, 255)
+            sectionName.TextColor3 = themeList.TextColor
             Objects[sectionName] = "TextColor3"
             sectionName.TextSize = 14.000
             sectionName.TextXAlignment = Enum.TextXAlignment.Left
-            if themeList.SchemeColor == Color3.fromRGB(87, 143, 255) then
+            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                 Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
             end 
             if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(87, 143, 255)}, 0.2)
+                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
             end 
                
             sectionInners.Name = "sectionInners"
             sectionInners.Parent = sectionFrame
-            sectionInners.BackgroundColor3 = Color3.fromRGB(87, 143, 255)
+            sectionInners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             sectionInners.BackgroundTransparency = 1.000
             sectionInners.Position = UDim2.new(0, 0, 0.190751448, 0)
 
@@ -560,7 +560,7 @@ function Kavo.CreateLib(kavName, themeList)
                 sectionHead.BackgroundColor3 = themeList.SchemeColor
                 tabButton.TextColor3 = themeList.TextColor
                 tabButton.BackgroundColor3 = themeList.SchemeColor
-                sectionName.TextColor3 = Color3.fromRGB(87, 143, 255)
+                sectionName.TextColor3 = themeList.TextColor
             end
         end)()
 
@@ -2599,36 +2599,32 @@ function Kavo.CreateLib(kavName, themeList)
             	label.Name = "label"
             	label.Parent = sectionInners
             	label.BackgroundColor3 = themeList.SchemeColor
+            	label.BorderSizePixel = 0
 				label.ClipsDescendants = true
             	label.Text = title
-                label.Font = Enum.Font.SourceSansBold
-                label.BackgroundTransparency = 1
            		label.Size = UDim2.new(0, 352, 0, 33)
 	            label.Font = Enum.Font.Gotham
 	            label.Text = "  "..title
 	            label.RichText = true
-                label.TextXAlignment = Enum.TextXAlignment.Center
-	            label.TextColor3 = Color3.fromRGB(87, 143, 255)
+	            label.TextColor3 = themeList.TextColor
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000
-                label.BorderSizePixel = 1
-                label.BorderColor3 = Color3.fromRGB(255, 0, 0) 
-
+	            label.TextXAlignment = Enum.TextXAlignment.Left
 	            
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
             	
-	            if themeList.SchemeColor == Color3.fromRGB(87, 143, 255) then
+	            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
 	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
 	            end 
 	            if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(87, 143, 255)}, 0.2)
+	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
 	            end 
 
 		        coroutine.wrap(function()
 		            while wait() do
-		                label.BackgroundColor3 =  Color3.fromRGB(87, 143, 255)
-		                label.TextColor3 = Color3.fromRGB(87, 143, 255)
+		                label.BackgroundColor3 = themeList.SchemeColor
+		                label.TextColor3 = themeList.TextColor
 		            end
 		        end)()
                 updateSectionFrame()

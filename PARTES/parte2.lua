@@ -3,7 +3,7 @@ local baseURL = "https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/%5
 -- * Tabla de hubs por GameId
 local hubs = {
     ["ID"] = { "POINT","MARCA", "SCRIPT" },
-    ["7018190066"] = { "SI", "AUTO_BONOS", "DEAD_RIELS" }
+    ["7018190066"] = { "SI", "DEAD_RIELS", "DEAD_RIELS" }
 }
 
 local juegoID = tostring(game.GameId)

@@ -2608,7 +2608,7 @@ function Kavo.CreateLib(kavName, themeList)
 	            label.Text = "  "..title
 	            label.RichText = true
                 label.TextXAlignment = Enum.TextXAlignment.Center
-	            label.TextColor3 = themeList.TextColor
+	            label.TextColor3 = Color3.fromRGB(87, 143, 255)
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000
                 label.BorderSizePixel = 1

@@ -42,7 +42,7 @@ if GENERAL then
                 warn("❌ Error al ejecutar el script:", result)
             end
         else
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/CARGAS/ping.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/ping.lua"))()
         end
     else
         local success, result = pcall(function()

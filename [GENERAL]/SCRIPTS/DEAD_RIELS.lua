@@ -36,7 +36,7 @@ local function createUI()
     _PRESENTACION_:NewLabel("🛠  REPRESENTANDO A: TEAM PROTOTYPE  🛠")
     _PRESENTACION_:NewLabel("🎯 TECNOLOGIA PARA TODOS 🎯")
     _PRESENTACION_:NewButton("JOIN SERVER", "PEGA EL LINK EN GOOGLE", function()
-        setclipboard("discord.gg/ammCKeyNcX")
+        setclipboard("discord.gg/2qcRceCmtC")
         _G.mensaje = { texto = "SE COPIO EL LINK", modo = "success" }
     end)
     local HOME = Window:NewTab("🏠 HOME")

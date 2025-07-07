@@ -239,7 +239,7 @@ task.spawn(function()
 					if Player.Character then
 						local humanoid = Player.Character:FindFirstChild("Humanoid")
 						if humanoid then
-							humanoid.Health = 1
+							humanoid.Health = 0
 						end
 
 					else

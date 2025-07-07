@@ -42,7 +42,7 @@ local function createUI()
     local HOME = Window:NewTab("🏠 HOME")
     local _HOME_ = HOME:NewSection("🏠 HOME")
     _HOME_:NewLabel("💖 ACA ESTA LOS SCRIPTS GENERALES 💖")
-    _HOME_:NewButton("JOIN SERVER", "PEGA EL LINK EN GOOGLE", function()
+    _HOME_:NewButton("AUTO BONOS EJECUTADO", "PEGA EL LINK EN GOOGLE", function()
         
         loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/refs/heads/main/%5BGENERAL%5D/SCRIPTS/PARTES/auto_bonos.lua"))()
         _G.mensaje = { texto = "AUTO BONOS EJECUTADO", modo = "success" }

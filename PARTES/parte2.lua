@@ -20,7 +20,7 @@ if GENERAL then
     -- * Definir globales
     _G.ID = GENERAL
     _G.POINT = POINT
-    _G.MARCA = MARCA
+    _G.MARCA_DEL_JUEGO = MARCA
     _G.NOMBRE = NOMBRE
     _G.SCRIPT = SCRIPT
 

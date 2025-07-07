@@ -531,7 +531,7 @@ function Kavo.CreateLib(kavName, themeList)
             sectionName.Font = Enum.Font.Gotham
             sectionName.Text = secName
             sectionName.RichText = true
-            sectionName.TextColor3 = themeList.TextColor
+            sectionName.TextColor3 =  Color3.fromRGB(87, 143, 255)
             Objects[sectionName] = "TextColor3"
             sectionName.TextSize = 14.000
             sectionName.TextXAlignment = Enum.TextXAlignment.Left
@@ -2618,11 +2618,11 @@ function Kavo.CreateLib(kavName, themeList)
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
             	
-	            if themeList.SchemeColor == Color3.fromRGB(87, 143, 255) then
+	            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
 	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
 	            end 
 	            if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(87, 143, 255)}, 0.2)
+	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
 	            end 
 
 		        coroutine.wrap(function()

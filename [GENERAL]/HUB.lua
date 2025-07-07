@@ -544,7 +544,7 @@ function Kavo.CreateLib(kavName, themeList)
                
             sectionInners.Name = "sectionInners"
             sectionInners.Parent = sectionFrame
-            sectionInners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            sectionInners.BackgroundColor3 = Color3.fromRGB(87, 143, 255)
             sectionInners.BackgroundTransparency = 1.000
             sectionInners.Position = UDim2.new(0, 0, 0.190751448, 0)
 
@@ -560,7 +560,7 @@ function Kavo.CreateLib(kavName, themeList)
                 sectionHead.BackgroundColor3 = themeList.SchemeColor
                 tabButton.TextColor3 = themeList.TextColor
                 tabButton.BackgroundColor3 = themeList.SchemeColor
-                sectionName.TextColor3 = themeList.TextColor
+                sectionName.TextColor3 = Color3.fromRGB(87, 143, 255)
             end
         end)()
 

@@ -2612,25 +2612,9 @@ function Kavo.CreateLib(kavName, themeList)
 	            label.TextColor3 = themeList.TextColor
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000
-                                -- * Borde superior rojo
-                local topBorder = Instance.new("Frame")
-                topBorder.Name = "TopBorder"
-                topBorder.Parent = label
-                topBorder.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-                topBorder.BorderSizePixel = 0
-                topBorder.Size = UDim2.new(1, 0, 0, 2)
-                topBorder.Position = UDim2.new(0, 0, 0, 0)
-                topBorder.ZIndex = label.ZIndex + 1
+                label.BorderSizePixel = 1
+                label.BorderColor3 = Color3.fromRGB(255, 0, 0) 
 
-                -- * Borde inferior rojo
-                local bottomBorder = Instance.new("Frame")
-                bottomBorder.Name = "BottomBorder"
-                bottomBorder.Parent = label
-                bottomBorder.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-                bottomBorder.BorderSizePixel = 0
-                bottomBorder.Size = UDim2.new(1, 0, 0, 2)
-                bottomBorder.Position = UDim2.new(0, 0, 1, -2)
-                bottomBorder.ZIndex = label.ZIndex + 1
 	            
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label

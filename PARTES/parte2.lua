@@ -28,7 +28,7 @@ if GENERAL then
     print("✅ MARCA:", _G.MARCA_DEL_JUEGO)
     print("✅ SCRIPT:", _G.SCRIPT)
 
-    local URL_BASE = "https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/" .. MARCA .. "/SCRIPTS/"
+    local URL_BASE = "https://raw.githubusercontent.com/temporaltime93/-HUBS-/refs/heads/main/%5BGENERAL%5D/SCRIPTS/" .. MARCA .. ".lua"
     --local URL_SCRIPT = URL_BASE .. SCRIPT
     local URL_SCRIPT = URL_BASE .. SCRIPT
     if POINT == "SI" then

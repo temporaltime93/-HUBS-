@@ -1,6 +1,8 @@
 --_G.MARCA_DEL_JUEGO = "DEAD_RIELS"
 --_G.User_ID = "922173773631877150"
 --// Servicios
+local enlace = "https://discord.gg/2qcRceCmtC" 
+
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local TweenService = game:GetService("TweenService")
@@ -72,6 +74,14 @@ local function crearGUIBond()
 	textBox.Parent = frame
 end
 
+joinServer.MouseButton1Click:Connect(function()
+    if setclipboard then
+        setclipboard(enlace)
+        print("✅ Enlace copiado al portapapeles")
+    else
+        print("❌ No se pudo copiar. setclipboard no disponible.")
+    end
+end)
 --// Función 2: Contar bonos destruidos
 local bondContados = {}
 

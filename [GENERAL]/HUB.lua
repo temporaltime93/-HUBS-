@@ -2627,7 +2627,7 @@ function Kavo.CreateLib(kavName, themeList)
 
 		        coroutine.wrap(function()
 		            while wait() do
-		                label.BackgroundColor3 = themeList.SchemeColor
+		                label.BackgroundColor3 =  Color3.fromRGB(87, 143, 255)
 		                label.TextColor3 = Color3.fromRGB(87, 143, 255)
 		            end
 		        end)()

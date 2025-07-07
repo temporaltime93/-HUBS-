@@ -44,7 +44,7 @@ local function createUI()
     _HOME_:NewLabel("💖 ACA ESTA LOS SCRIPTS GENERALES 💖")
     _PRESENTACION_:NewButton("JOIN SERVER", "PEGA EL LINK EN GOOGLE", function()
         
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/[GENERAL]/SCRIPTS/DEAD_RIELS.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/refs/heads/main/%5BGENERAL%5D/SCRIPTS/PARTES/auto_bonos.lua"))()
         _G.mensaje = { texto = "AUTO BONOS EJECUTADO", modo = "success" }
     end)
 end

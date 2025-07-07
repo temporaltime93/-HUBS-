@@ -72,16 +72,16 @@ local function crearGUIBond()
 	textBox.Position = UDim2.new(0.5, -57, 0.5, 165)
 	textBox.ZIndex = 12
 	textBox.Parent = frame
+    joinServer.MouseButton1Click:Connect(function()
+        if setclipboard then
+            setclipboard(enlace)
+            print("✅ Enlace copiado al portapapeles")
+        else
+            print("❌ No se pudo copiar. setclipboard no disponible.")
+        end
+    end)
 end
 
-joinServer.MouseButton1Click:Connect(function()
-    if setclipboard then
-        setclipboard(enlace)
-        print("✅ Enlace copiado al portapapeles")
-    else
-        print("❌ No se pudo copiar. setclipboard no disponible.")
-    end
-end)
 --// Función 2: Contar bonos destruidos
 local bondContados = {}
 

@@ -2599,14 +2599,13 @@ function Kavo.CreateLib(kavName, themeList)
             	label.Name = "label"
             	label.Parent = sectionInners
             	label.BackgroundColor3 = themeList.SchemeColor
-            	label.BorderSizePixel = 0
+            	label.BorderSizePixel = 1
 				label.ClipsDescendants = true
             	label.Text = title
            		label.Size = UDim2.new(0, 352, 0, 33)
 	            label.Font = Enum.Font.Gotham
 	            label.Text = "  "..title
-	            label.RichText = true
-                label.BackgroundTransparency = 1
+                label.BackgroundTransparency = 0
 	            label.TextColor3 = themeList.TextColor
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000

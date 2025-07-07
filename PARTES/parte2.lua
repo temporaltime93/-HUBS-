@@ -33,12 +33,12 @@ if GENERAL then
 
     if POINT == "SI" then
         if _G.PING_PONG == "true" then
-            loadstring(game:HttpGet(URL_SCRIPT))()
+            return loadstring(game:HttpGet(URL_SCRIPT))()
         else
             loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/ping.lua"))()
         end
     else
-        loadstring(game:HttpGet(URL_SCRIPT))()
+        return loadstring(game:HttpGet(URL_SCRIPT))()
     end
 else
     _G.mensaje = { modo = "error", texto = "❌ NO TENEMOS UN HUB PARA TU JUEGO: " .. juego }

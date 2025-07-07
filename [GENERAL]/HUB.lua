@@ -2599,7 +2599,6 @@ function Kavo.CreateLib(kavName, themeList)
             	label.Name = "label"
             	label.Parent = sectionInners
             	label.BackgroundColor3 = themeList.SchemeColor
-            	label.BorderSizePixel = 0
 				label.ClipsDescendants = true
             	label.Text = title
                 label.Font = Enum.Font.SourceSansBold

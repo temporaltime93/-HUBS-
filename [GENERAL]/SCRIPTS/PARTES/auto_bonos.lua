@@ -257,16 +257,6 @@ task.spawn(function()
 					end
 				end
 				ResetCharacter()
-				print("🚨 ¡Vida crítica! Ejecutando acción de emergencia...")
-
-    			local bonos = tostring(_G.Bond or "0")
-    			_G.enviar = {
-    				["BONOS: "]  = bonos,
-    				["VERSION: "] = "v1",
-    			}
-    
-    			task.wait(2)
-    			loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[INTEGRACIONES]/api.lua"))()
 			end
 		end
 	end

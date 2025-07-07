@@ -33,14 +33,29 @@ if GENERAL then
     local URL_SCRIPT = URL_BASE .. SCRIPT
     if POINT == "SI" then
         if _G.PING_PONG == "true" then
-            return loadstring(game:HttpGet(URL_SCRIPT))()
+            local success, response = pcall(function()
+                return game:HttpGet(URL_SCRIPT)
+            end)
+            --return loadstring(game:HttpGet(URL_SCRIPT))()
         else
             loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/ping.lua"))()
         end
     else
-        return loadstring(game:HttpGet(URL_SCRIPT))()
+        local success, response = pcall(function()
+                return game:HttpGet(URL_SCRIPT)
+        end)
+        
     end
 else
     _G.mensaje = { modo = "error", texto = "❌ NO TENEMOS UN HUB PARA TU JUEGO: " .. juego }
     warn(_G.mensaje.texto)
 end
+
+
+
+if success and response and response:find("return") then
+    return loadstring(response)()
+else
+    warn("❌ No se pudo cargar el script desde: " .. URL_SCRIPT)
+end
+

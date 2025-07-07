@@ -535,11 +535,11 @@ function Kavo.CreateLib(kavName, themeList)
             Objects[sectionName] = "TextColor3"
             sectionName.TextSize = 14.000
             sectionName.TextXAlignment = Enum.TextXAlignment.Left
-            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
+            if themeList.SchemeColor == Color3.fromRGB(87, 143, 255) then
                 Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
             end 
             if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
+                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(87, 143, 255)}, 0.2)
             end 
                
             sectionInners.Name = "sectionInners"

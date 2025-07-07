@@ -2605,11 +2605,13 @@ function Kavo.CreateLib(kavName, themeList)
            		label.Size = UDim2.new(0, 352, 0, 33)
 	            label.Font = Enum.Font.Gotham
 	            label.Text = "  "..title
-	            label.RichText = true
+                label.BackgroundTransparency = 1
 	            label.TextColor3 = themeList.TextColor
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000
-	            label.TextXAlignment = Enum.TextXAlignment.Left
+                label.Font = Enum.Font.SourceSansBold
+                label.TextXAlignment = Enum.TextXAlignment.Center
+
 	            
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
